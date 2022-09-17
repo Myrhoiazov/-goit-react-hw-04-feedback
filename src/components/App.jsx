@@ -19,24 +19,19 @@ export const App = () => {
 
     switch (name) {
       case 'good':
-        return setGood(state => state + 1);
-        // eslint-disable-next-line
+        setGood(state => state + 1);
         break;
 
-
       case 'neutral':
-        return setNeutral(state => state + 1);
-        // eslint-disable-next-line
+        setNeutral(state => state + 1);
         break;
 
       case 'bad':
-        return setBad(state => state + 1);
-        // eslint-disable-next-line
+        setBad(state => state + 1);
         break;
 
-
       default:
-        return ;
+        return;
     }
   };
 
